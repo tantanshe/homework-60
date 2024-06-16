@@ -5,7 +5,7 @@ interface MessagesProps {
   messages: Message[];
 }
 
-const Messages: React.FC<MessagesProps> = ({messages}) => {
+const MessagesList: React.FC<MessagesProps> = ({messages}) => {
   return (
     <div>
       {messages.map(message => (
@@ -18,4 +18,4 @@ const Messages: React.FC<MessagesProps> = ({messages}) => {
   );
 };
 
-export default Messages;
+export default MessagesList;

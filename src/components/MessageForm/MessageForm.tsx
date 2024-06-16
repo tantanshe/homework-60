@@ -18,7 +18,7 @@ const MessageForm: React.FC<MessageFormProps> = ({onSendMessage}) => {
   };
 
   return (
-    <form>
+    <form onSubmit={submitMessage}>
       <input
         type="text"
         value={author}
@@ -31,7 +31,7 @@ const MessageForm: React.FC<MessageFormProps> = ({onSendMessage}) => {
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Type in your message"
       />
-      <button type="submit" onSubmit={submitMessage}>Send</button>
+      <button type="submit">Send</button>
     </form>
   );
 };
